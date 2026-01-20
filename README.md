@@ -9,34 +9,27 @@ Python 3.10 or higher
 Ollama: Download from ollama.com
 
 Once Ollama is installed, open your terminal and download the model:
-
-Bash
 ollama pull gemma3:4b
+
 2. Install Dependencies
 Open your terminal in the project folder and run the following command to install all necessary Python libraries:
-
-Bash
 pip install streamlit pymupdf ollama pandas
+
 What these do:
-
 streamlit: The web interface framework.
-
 pymupdf: Extracts text from PDF resumes.
-
 ollama: Connects the app to your local Gemma 3 model.
-
 pandas: Handles the data tables in the dashboard.
 
 3. How to Run the Project
 Start the Ollama Service: Ensure the Ollama app is running in your system tray or background.
-
 Launch the Dashboard: Navigate to your project directory in the terminal and run:
-
-Bash
+in terminal enter:
 streamlit run app.py
+
 Access the App: Your default web browser will open a new tab at: http://localhost:8501
 
-4. Step-by-Step Usage
+5. Step-by-Step Usage
 Tab 1 (Create New Job): Enter a Job ID and paste your Job Description. Click "Save".
 
 Tab 2 (Screening Room): Select the Job ID you just created. Drag and drop your PDF resumes into the uploader. Click "Start Screening".
